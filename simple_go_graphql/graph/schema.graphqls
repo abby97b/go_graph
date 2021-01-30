@@ -1,0 +1,41 @@
+
+type User {
+  id: ID!
+  FirstName: String!
+  LastName: String!
+  Age: Int!
+  Phone: String!
+  Address: String!
+
+}
+
+type Query {
+  users: [User!]!
+}
+
+input NewUser {
+  FirstName: String!
+  LastName: String!
+  Age: Int!
+  Phone: String!
+  Address: String!
+}
+
+input EditUser{
+  id: ID!
+  FirstName: String!
+  LastName: String!
+  Phone: String!
+  Address: String!
+}
+
+input DeleteUser{
+  id: ID!
+}
+
+
+type Mutation {
+  createUser(input: NewUser!): User!
+  updateUser(input: EditUser!): User!
+  deleteUser(input:DeleteUser!): User!
+}
