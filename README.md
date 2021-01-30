@@ -57,7 +57,7 @@ Delete user
 ```
 mutation{
  deleteUser(input:{
-    id:"1443635317331776148"
+    id:"id_from_getUsers query"
   }){
   id
   }
