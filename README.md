@@ -32,11 +32,12 @@ query getUsers{
 }
 
 
+#get id from getUsers query
 
 mutation UpdateUser{
   updateUser(input:{
-    id:"1443635317331776148"
-    FirstName:" changed last",
+    id:"1443635317331776148" 
+    FirstName:" New name",
     LastName:"ban",
     Phone:"9993339991",
     Address:"mumbai pune mumbai"
@@ -47,6 +48,7 @@ mutation UpdateUser{
     Address
   }
 }
+
 
 mutation{
  deleteUser(input:{
