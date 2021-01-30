@@ -40,7 +40,7 @@ Get id from getUsers query
 ```
 mutation UpdateUser{
   updateUser(input:{
-    id:"1443635317331776148" 
+    id:"id_from_getUsers query"
     FirstName:" New name",
     LastName:"ban",
     Phone:"9993339991",
