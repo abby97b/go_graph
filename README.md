@@ -23,7 +23,7 @@ mutation NewUser{
 }
 ```
 
-
+```
 query getUsers{
   users{
     FirstName,
@@ -32,10 +32,12 @@ query getUsers{
     id
   }
 }
+```
 
 
-#get id from getUsers query
 
+Get id from getUsers query
+```
 mutation UpdateUser{
   updateUser(input:{
     id:"1443635317331776148" 
@@ -50,8 +52,9 @@ mutation UpdateUser{
     Address
   }
 }
+```
 
-
+```
 mutation{
  deleteUser(input:{
     id:"1443635317331776148"
@@ -59,4 +62,7 @@ mutation{
   id
   }
 }
+```
+
+
 
