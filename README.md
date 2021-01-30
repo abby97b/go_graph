@@ -4,6 +4,8 @@ run the server : go run server.go
 
 following are the mutations and query for the graph playground
 
+
+```
 mutation NewUser{
   createUser(input:{
     FirstName:"faslkfjdsalk;jfalf",
@@ -19,7 +21,7 @@ mutation NewUser{
     Address
   }
 }
-
+```
 
 
 query getUsers{
