@@ -61,7 +61,12 @@ func (db *database) UpdateUser(id string, updatedUser *model.User) {
 
 	filter := bson.M{"_id": id}
 	update := bson.M{
-		"$set": bson.M{"FirstName": updatedUser.FirstName},
+		"$set": bson.M{
+			"firstname": updatedUser.FirstName,
+			"lastname":  updatedUser.LastName,
+			"phone":     updatedUser.Phone,
+			"address":   updatedUser.Address,
+		},
 	}
 
 	upsert := true
