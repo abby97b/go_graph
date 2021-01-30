@@ -4,7 +4,7 @@ run the server : go run server.go
 
 following are the mutations and query for the graph playground
 
-
+Create user
 ```
 mutation NewUser{
   createUser(input:{
@@ -22,7 +22,7 @@ mutation NewUser{
   }
 }
 ```
-
+Get user
 ```
 query getUsers{
   users{
@@ -53,7 +53,7 @@ mutation UpdateUser{
   }
 }
 ```
-
+Delete user
 ```
 mutation{
  deleteUser(input:{
